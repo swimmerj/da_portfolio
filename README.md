@@ -35,8 +35,8 @@ My background in operations gave me a strong foundation in process optimization 
 ---
 
 ### Certifications & Learning
-* **[Name of Course 1]** - [Provider, e.g., Udemy/Coursera]
-* **[Name of Course 2]** - [Provider]
+* **Data Analytics** - Google
+* **Data Analysis** - IT Academy
 
 ---
 
