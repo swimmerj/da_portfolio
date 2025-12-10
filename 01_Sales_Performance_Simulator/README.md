@@ -1,25 +1,51 @@
-# Project 1: Sales Performance & Commission Simulator
+Project: Sales Performance & Commission Simulator
 
-## Project Overview
-This project simulates a real-world scenario for a Commercial Analyst role. The goal is to analyze sales performance using transactional data, calculate commission bonuses for the sales team, and identify key market trends.
+### Project Overview
+**Role:** Commercial Planning Analyst (Simulation)  
+**Tools:** SQL (ETL & Logic), Power BI (Visualization), DAX  
+**Goal:** Transform raw retail transaction data into an interactive dashboard to monitor sales performance and simulate a new commission structure for the sales team.
 
-## Business Problem
-The management team needs a transparent way to:
-1. Track monthly revenue performance adjusted for returns.
-2. Calculate a proposed **5% commission bonus** for sales personnel based on a 30% margin.
-3. Identify top-performing countries and customers.
+![Dashboard Preview](dashboard_preview.png)
+*(Note: This dashboard visualizes the finalized commission logic and sales trends)*
 
-## Tech Stack
-- **SQL (MySQL):** Data cleaning, ETL, and logic implementation (filtering returns, calculating revenue).
-- **Power BI:** (In Progress) Dashboarding and visualization.
+---
 
-## Project Structure
-- `SQL_Scripts/`: Contains the ETL and cleaning logic.
-    - `01_data_cleaning.sql`: Removes returns, handles missing customer IDs, and standardizes date formats.
+### Business Problem
+A UK-based online retailer wants to:
+1.  **Track Sales Performance:** Move from static Excel sheets to dynamic monitoring of revenue and trends.
+2.  **Identify Key Markets:** Understand which countries (outside the domestic UK market) are driving growth.
+3.  **Simulate Remuneration:** The management proposed a new bonus scheme: **5% commission on a fixed 30% margin**. They needed to know the financial impact of this logic before implementation.
 
-## Key Insights (To be updated)
-- *Coming soon after Power BI analysis.*
+### Solution Architecture
+I implemented a full-stack data analysis workflow:
 
-## Data Source
-- **Dataset:** Online Retail II (UCI Machine Learning Repository).
-- *Note: The raw data file is not included in this repo due to size limits.*
+**1. Data Cleaning & ETL (SQL)**
+* **Raw Data:** ~1 million rows of transaction data (2009-2011).
+* **Cleaning:** Used SQL to remove cancellations (Invoices starting with 'C'), negative quantities, and "anonymous" transactions (missing Customer IDs).
+* **Transformation:** Cast text fields to correct data types (`DATETIME`, `DECIMAL`) and created a standardized schema using a Staging vs. Production table strategy.
+* *Key Skill:* Handling dirty data and ensuring data integrity before analysis.
+
+**2. Business Logic Implementation (DAX)**
+Instead of pre-calculating everything in Excel, I used DAX measures to make the dashboard interactive:
+* `Total Revenue` = `SUM(Revenue)`
+* `Estimated Margin` = `[Total Revenue] * 0.30` (Assumption based on business brief)
+* `Commission Bonus` = `[Estimated Margin] * 0.05`
+
+**3. Visualization & Reporting (Power BI)**
+* **Strategic Layout:** KPIs at the top follow the P&L logic (Revenue -> Margin -> Bonus).
+* **Market Analysis:** Created a specific breakdown for **International Markets (Excl. UK)** to reveal export opportunities, identifying EIRE and Netherlands as top performers.
+* **Trend Analysis:** Drilled down to monthly views to reveal the Q4 seasonal peak.
+
+---
+
+### Key Findings
+1.  **Revenue & Seasonality:** Total analyzed revenue stands at **£17.7M**. There is a distinct seasonal trend with sales peaking significantly in **Q4 (September - December)**, suggesting the need for increased inventory and staffing during this period.
+2.  **International Growth:** While the UK is the primary market, **EIRE (Ireland)** and the **Netherlands** are the strongest export territories. Future marketing spend should target these regions to maximize ROI.
+3.  **Commission Impact:** Under the proposed 5% scheme, the total payout would be approx. **£266k** (approx 1.5% of total revenue). This confirms the scheme is financially sustainable for the company.
+
+---
+
+### Repository Structure
+* `01_data_cleaning.sql` - The SQL script used to clean and transform the raw CSV data.
+* `01_Sales_Performance_Dashboard.pbix` - The final Power BI file.
+* `dashboard_final.png` - Visual preview of the report.
