@@ -55,5 +55,11 @@ Instead of pre-calculating everything in Excel, I used DAX measures to make the 
 * **`README.md`** - Project documentation.
 * `Dashboard_Final.png` - Visual preview of the report.
 
+---
+### 📚 Data Source & Credits
+**Dataset:** Online Retail II Data Set  
+**Source:** UCI Machine Learning Repository  
+**Link:** [https://archive.ics.uci.edu/ml/datasets/Online+Retail+II](https://archive.ics.uci.edu/ml/datasets/Online+Retail+II)  
+**Citation:** Chen, D. Sain, S.L., and Guo, K. (2012), *Data mining for the online retail industry: A case study of RFM model-based customer segmentation using data mining*, Journal of Database Marketing and Customer Strategy Management, Vol. 19, No. 3, pp. 197â€“208.
 
-
+**License:** This dataset is licensed under a **Creative Commons Attribution 4.0 International (CC BY 4.0)** license.
