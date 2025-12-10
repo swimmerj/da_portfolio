@@ -5,7 +5,7 @@ Project: Sales Performance & Commission Simulator
 **Tools:** SQL (ETL & Logic), Power BI (Visualization), DAX  
 **Goal:** Transform raw retail transaction data into an interactive dashboard to monitor sales performance and simulate a new commission structure for the sales team.
 
-![Dashboard Preview](dashboard_final.png)
+![Dashboard Preview](Dashboard_Final.png)
 *(Note: This dashboard visualizes the finalized commission logic and sales trends)*
 
 ---
@@ -48,11 +48,12 @@ Instead of pre-calculating everything in Excel, I used DAX measures to make the 
 ### Repository Structure
 
 * **`SQL_Scripts/`**
-  * `01_data_cleaning.sql` - The ETL script for cleaning raw data, handling data types, and removing cancellations.
+  * `01_Data_Cleaning.sql` - The ETL script for cleaning raw data, handling data types, and removing cancellations.
 * **`PBI_Reports/`**
   * `Sales_Performance_Dashboard.pbix` - The interactive Power BI dashboard source file.
   * `Sales_Report.pdf` - A static print-ready version of the report.
 * **`README.md`** - Project documentation.
-* `dashboard_final.png` - Visual preview of the report.
+* `Dashboard_Final.png` - Visual preview of the report.
+
 
 
