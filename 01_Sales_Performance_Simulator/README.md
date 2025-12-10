@@ -46,7 +46,13 @@ Instead of pre-calculating everything in Excel, I used DAX measures to make the 
 ---
 
 ### Repository Structure
-* `01_data_cleaning.sql` - The SQL script used to clean and transform the raw CSV data.
-* `01_Sales_Performance_Dashboard.pbix` - The final Power BI file.
+
+* **`SQL_Scripts/`**
+  * `01_data_cleaning.sql` - The ETL script for cleaning raw data, handling data types, and removing cancellations.
+* **`PBI_Reports/`**
+  * `Sales_Performance_Dashboard.pbix` - The interactive Power BI dashboard source file.
+  * `Sales_Report.pdf` - A static print-ready version of the report.
+* **`README.md`** - Project documentation.
 * `dashboard_final.png` - Visual preview of the report.
+
 
