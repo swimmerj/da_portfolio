@@ -56,9 +56,10 @@ Instead of pre-calculating everything in Excel, I used DAX measures to make the 
 * `Dashboard_Final.png` - Visual preview of the report.
 
 ---
----
+
 ### Data Source & Credits
 **Dataset:** Online Retail II UCI  
 **Source:** Kaggle (originally from UCI Machine Learning Repository)  
 **Link:** [https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci)  
 **License:** CC0: Public Domain
+
