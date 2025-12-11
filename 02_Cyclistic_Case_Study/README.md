@@ -1,48 +1,60 @@
-# 📈 Data Analytics Portfolio
+# Cyclistic Bike-Share Analysis
 
-### 👋 About Me
-Hi, I'm **[Your Name]**.  
-I am an **Operations Specialist transitioning into Data Analytics**.  
-My background in operations gave me a strong foundation in process optimization and real-world problem solving. Now, I apply that business mindset to data analysis using **SQL** and **Power BI** to drive decision-making and efficiency.
+**Google Data Analytics Capstone Project** *Analysis of usage patterns between Casual Riders and Annual Members to drive membership growth.*
 
- This repository serves as a portfolio of my projects, documenting my journey from raw data to actionable business insights.
+## Project Overview
+**Cyclistic**, a bike-share company in Chicago, aims to maximize the number of annual memberships. The Director of Marketing believes the company’s future success depends on maximizing the number of annual memberships. 
+
+**The Goal:** Design marketing strategies aimed at converting casual riders into annual members.
+
+**The Business Question:** *How do annual members and casual riders use Cyclistic bikes differently?*
+
+## Tech Stack
+* **Data Cleaning & Analysis:** R (Tidyverse, Lubridate, Arrow)
+* **Data Visualization:** Tableau Public
+* **Report:** RMarkdown
+
+## Data Source
+**Source:** [Divvy Trip Data](https://divvy-tripdata.s3.amazonaws.com/index.html)  
+**Date Range:** August 2024 – July 2025  
+**Data Provider:** Motivate International Inc. (under [this license](https://divvybikes.com/data-license-agreement))
+
+* **Files used:** 12 monthly CSV files (`202408-divvy-tripdata.csv` to `202507-divvy-tripdata.csv`)
+* **Volume:** Approx. 5 million+ rows of data.
+* *Note: Due to GitHub file size limits, raw data files are not uploaded to this repository.*
+
+## Data Cleaning (R)
+The original dataset contained 12 separate CSV files. The following steps were taken in R to clean and prepare the data:
+
+1.  **Merged** all 12 months of data into a single dataframe.
+2.  **Standardized** columns: Trimmed whitespace and converted categorical data (like `rideable_type`) to lowercase.
+3.  **Feature Engineering:**
+    * Created `trip_duration` (ended_at - started_at).
+    * Extracted `day_of_week` and `hour_of_day`.
+4.  **Data Quality Check:**
+    * Removed trips shorter than 60 seconds (potential false starts).
+    * Removed trips longer than 24 hours (outliers/stolen bikes).
+    * Handled missing values in station names.
+
+*(See `scripts/analysis.Rmd` for the detailed code)*
+
+## Key Findings
+* **Finding 1:** Casual riders take significantly longer trips, peaking on weekends, suggesting a focus on leisure and tourism.
+* **Finding 2:** Members are consistent weekday commuters, taking shorter, more direct trips that peak during rush hour.
+* **Bike Preference:** Casual riders have a stronger preference for electric bikes compared to members.
+
+## Dashboard
+An interactive dashboard was created in Tableau to visualize these trends.
+
+[![Dashboard Preview](images/dashboard_preview.png)](https://public.tableau.com/views/CyclisticBike-ShareAnAnalysisofMemberandCasualRiders_17562803507210/Dashboard-HowdoannualmembersandcasualridersuseCyclisticbikesdifferently?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+> **[👉 Click here to view the interactive dashboard on Tableau Public](https://public.tableau.com/views/CyclisticBike-ShareAnAnalysisofMemberandCasualRiders_17562803507210/Dashboard-HowdoannualmembersandcasualridersuseCyclisticbikesdifferently?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+
+## 💡 Recommendations
+To convert casual riders into members, focus marketing efforts on the benefits of subscription services for leisure riding:
+1.  **"Weekend Warrior" Membership:** Create a weekend-only membership tier.
+2.  **Duration-Based Incentives:** Offer benefits that reward longer rides (e.g., "First 45 mins free").
+3.  **Leisure Campaigns:** Target ad spend on weekends and near tourist hotspots (as seen in the map visualization).
 
 ---
-
-### 🛠️ Technical Skills
-
-| Category | Skills & Tools |
-| :--- | :--- |
-| **Data Analysis** | SQL (MySQL, T-SQL), Excel (Advanced), Python (Pandas - *In Progress*) |
-| **Visualization** | Power BI (DAX, Data Modeling), Tableau |
-| **Database Mgmt** | DBeaver, MS SQL Server, WampServer |
-| **Soft Skills** | Commercial Planning, Process Optimization, Stakeholder Communication |
-
----
-
-### 📂 Portfolio Projects
-
-#### [1. Sales Performance & Commission Simulator](01_Retail_Sales_Performance/)
-**Goal:** Analyze 2 years of retail transaction data to evaluate sales trends and simulate the financial impact of a new commission scheme (5% of Margin).
-
-* **Business Problem:** The company needed to move from static Excel reporting to dynamic monitoring and required a financial simulation for a proposed bonus structure.
-* **Key Tech:**
-    * **SQL:** Strict ETL pipeline, data cleaning (handling nulls, cancellations), and type casting.
-    * **Power BI:** DAX measures for financial logic (`Estimated Margin`, `Commission Bonus`) and interactive dashboards.
-* **Outcome:** Identified Top 3 export markets (EIRE, Netherlands, Germany) and validated that the new commission scheme costs ~1.5% of total revenue.
-* 🔗 **[View Project Folder & Dashboard](01_Retail_Sales_Performance/)**
-
----
-
-### 📜 Certifications & Learning
-* **[Name of Course 1]** - [Provider, e.g., Udemy/Coursera]
-* **[Name of Course 2]** - [Provider]
-
----
-
-### 📫 Connect with Me
-* **LinkedIn:** [Your LinkedIn Profile URL]
-* **Email:** [Your Email Address - Optional]
-
-*(Note: This portfolio is a living document and will be updated as I complete more projects.)*
-
+*Author: Juraj Plavka* *Date: December 11, 2025*
