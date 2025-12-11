@@ -48,9 +48,9 @@ An interactive dashboard was created in Tableau to visualize these trends.
 
 [![Dashboard Preview](images/dashboard_preview.png)](https://public.tableau.com/views/CyclisticBike-ShareAnAnalysisofMemberandCasualRiders_17562803507210/Dashboard-HowdoannualmembersandcasualridersuseCyclisticbikesdifferently?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-> **[👉 Click here to view the interactive dashboard on Tableau Public](https://public.tableau.com/views/CyclisticBike-ShareAnAnalysisofMemberandCasualRiders_17562803507210/Dashboard-HowdoannualmembersandcasualridersuseCyclisticbikesdifferently?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
+> **[Click here to view the interactive dashboard on Tableau Public](https://public.tableau.com/views/CyclisticBike-ShareAnAnalysisofMemberandCasualRiders_17562803507210/Dashboard-HowdoannualmembersandcasualridersuseCyclisticbikesdifferently?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
-## 💡 Recommendations
+## Recommendations
 To convert casual riders into members, focus marketing efforts on the benefits of subscription services for leisure riding:
 1.  **"Weekend Warrior" Membership:** Create a weekend-only membership tier.
 2.  **Duration-Based Incentives:** Offer benefits that reward longer rides (e.g., "First 45 mins free").
