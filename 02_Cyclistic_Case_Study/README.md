@@ -43,7 +43,7 @@ I utilized R for high-volume data processing and Tableau for storytelling:
 ## Dashboard
 An interactive dashboard was created in Tableau to visualize these trends.
 
-[![Dashboard Preview](images/dashboard_preview.png)](https://public.tableau.com/views/CyclisticBike-ShareAnAnalysisofMemberandCasualRiders_17562803507210/Dashboard-HowdoannualmembersandcasualridersuseCyclisticbikesdifferently?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[![Dashboard Preview](output/dashboard_preview.png)](https://public.tableau.com/views/CyclisticBike-ShareAnAnalysisofMemberandCasualRiders_17562803507210/Dashboard-HowdoannualmembersandcasualridersuseCyclisticbikesdifferently?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 > **[Click here to view the interactive dashboard on Tableau Public](https://public.tableau.com/views/CyclisticBike-ShareAnAnalysisofMemberandCasualRiders_17562803507210/Dashboard-HowdoannualmembersandcasualridersuseCyclisticbikesdifferently?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
@@ -51,3 +51,4 @@ An interactive dashboard was created in Tableau to visualize these trends.
 * `scripts/` - RMarkdown analysis file (`analysis.Rmd`) and HTML report.
 * `images/` - Dashboard screenshots.
 * `README.md` - Project documentation.
+
