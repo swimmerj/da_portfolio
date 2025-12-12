@@ -49,7 +49,8 @@ An interactive dashboard was created in Tableau to visualize these trends.
 
 ## Repository Structure
 * `scripts/` - RMarkdown analysis file (`analysis.Rmd`) and HTML report.
-* `images/` - Dashboard screenshots.
+* `output/` - Dashboard screenshots.
 * `README.md` - Project documentation.
+
 
 
