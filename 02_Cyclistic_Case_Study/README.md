@@ -22,7 +22,7 @@ I utilized R for high-volume data processing and Tableau for storytelling:
 * **Source:** [Divvy Trip Data](https://divvy-tripdata.s3.amazonaws.com/index.html) (12 months, ~5 million rows).
 * **Merging:** Combined 12 monthly CSV files into a single dataframe.
 * **Cleaning:** Removed trips <60s (false starts) and >24h (outliers).
-* **Feature Engineering:** Created `trip_duration`, `day_of_week`, and `hour_of_day`.
+* **Feature Engineering:** Created `trip_duration:`, `hour_of_the_day:`, and `day_of_week_name:`.
 
 **2. Visualization (Tableau)**
 * Created heatmaps to visualize "Commuter" vs. "Leisure" schedules.
@@ -51,6 +51,7 @@ An interactive dashboard was created in Tableau to visualize these trends.
 * `scripts/` - RMarkdown analysis file (`cyclistic_analysis.Rmd`) and HTML report.
 * `output/` - Dashboard screenshots.
 * `README.md` - Project documentation.
+
 
 
 
