@@ -1,8 +1,8 @@
-# # Telco Churn & Retention Strategy
+# Telco Churn & Retention Strategy
 
-**Role:** Product Analyst (Simulation)  
-**Tools:** SQL (MySQL), Power BI (Drill-through, DAX), Data Modelling  
-**Goal:** Analyze the failure of the "Fiber Optic" product line and design a retention strategy for high-value customers.
+* **Role:** Product Analyst (Simulation)  
+* **Tools:** SQL (MySQL), Power BI (Drill-through, DAX), Data Modelling  
+* **Goal:** Analyze the failure of the "Fiber Optic" product line and design a retention strategy for high-value customers.
 
 ## Project Overview
 **Telco**, a telecommunications provider, is experiencing high churn rates within its premium "Fiber Optic" internet service. The Product Director tasked me with diagnosing the root cause of this attrition and quantifying the revenue impact.
@@ -55,4 +55,5 @@ By combining Service, Payment, and Support variables, I identified a strategy to
 ---
 
 *Author: Juraj Plavka* *Date: December 17, 2025*
+
 
