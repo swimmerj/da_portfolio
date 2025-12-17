@@ -44,7 +44,7 @@ The final dashboard identifies a **"Death Spiral"** segment and proposes a "Gold
 
 ![Dashboard Main View](output/dashboard_screenshot.png)
 
-## 💡 Recommendations
+## Recommendations
 By combining Service, Payment, and Support variables, I identified a strategy to reduce churn from **53%** to **17%**.
 
 1.  **Fix the "Toxic" Combination:** Fiber users paying via **Electronic Check** have a critical churn rate of **53%**. (If they also lack Tech Support, this spikes to **58%**).
@@ -53,4 +53,5 @@ By combining Service, Payment, and Support variables, I identified a strategy to
 4.  **Sales Action:** Implemented a **Drill-Through** feature allowing the Retention Team to export a list of "At-Risk" Electronic Check users for immediate outreach.
 
 ---
+
 *Author: Juraj Plavka* *Date: December 17, 2025*
